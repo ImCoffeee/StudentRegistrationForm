@@ -45,6 +45,9 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ProgramComboBox = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblStudentRegistrationForm
@@ -96,7 +99,7 @@
             this.lblGender.Size = new System.Drawing.Size(85, 25);
             this.lblGender.TabIndex = 4;
             this.lblGender.Text = "Gender*";
-            this.lblGender.Click += new System.EventHandler(this.label5_Click);
+           
             // 
             // lblDateofBirth
             // 
@@ -157,7 +160,6 @@
             this.DayComboBox.Size = new System.Drawing.Size(81, 33);
             this.DayComboBox.TabIndex = 11;
             this.DayComboBox.Text = "-Day-";
-            this.DayComboBox.SelectedIndexChanged += new System.EventHandler(this.DayComboBox_SelectedIndexChanged);
             // 
             // MonthComboBox
             // 
@@ -168,7 +170,6 @@
             this.MonthComboBox.Size = new System.Drawing.Size(125, 33);
             this.MonthComboBox.TabIndex = 12;
             this.MonthComboBox.Text = "-Month-";
-            this.MonthComboBox.SelectedIndexChanged += new System.EventHandler(this.MonthComboBox_SelectedIndexChanged);
             // 
             // YearComboBox
             // 
@@ -179,7 +180,7 @@
             this.YearComboBox.Size = new System.Drawing.Size(133, 33);
             this.YearComboBox.TabIndex = 13;
             this.YearComboBox.Text = "-Year-";
-            this.YearComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            
             // 
             // btRegisterStudent
             // 
@@ -202,7 +203,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(388, 30);
             this.txtLastName.TabIndex = 6;
-            this.txtLastName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // label1
             // 
@@ -213,7 +214,6 @@
             this.label1.Size = new System.Drawing.Size(167, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Program to apply*";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ProgramComboBox
             // 
@@ -225,11 +225,30 @@
             this.ProgramComboBox.TabIndex = 16;
             this.ProgramComboBox.Text = "-Select Program-";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(598, 353);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Browse";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(490, 109);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 232);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmStudentRegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 508);
+            this.ClientSize = new System.Drawing.Size(798, 508);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ProgramComboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btRegisterStudent);
@@ -250,6 +269,7 @@
             this.Name = "frmStudentRegistrationForm";
             this.Text = "Student Registration Form";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,6 +294,8 @@
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox ProgramComboBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

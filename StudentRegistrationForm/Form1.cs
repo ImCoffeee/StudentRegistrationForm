@@ -17,22 +17,6 @@ namespace StudentRegistrationForm
         {
             InitializeComponent();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             for (int i = 1; i <= 31; i++)
@@ -76,18 +60,7 @@ namespace StudentRegistrationForm
             }
 
         }
-        private void DayComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-         
-            
-        }
-
-        private void MonthComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-
-        }
-
+ 
         private void button1_Click(object sender, EventArgs e)
         {
             string firstName = txtFirstName.Text;
@@ -114,11 +87,6 @@ namespace StudentRegistrationForm
                $"Date of birth: {day}/{month}/{year}\n" +
             $"Programs: {program}";
             MessageBox.Show(message);
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
     }
